@@ -8,7 +8,6 @@ Trabalho de Conclusao de Curso
   <li><b>Co-Orientador:</b>Thiago Viana</li>
 </ul>
 <hr>
-<hr>
 <li><b>Atividades:</b>
   <ol>
     <li>alteração do visual das páginas dos serviços</li>
