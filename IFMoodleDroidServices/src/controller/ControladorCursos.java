@@ -7,6 +7,9 @@ import model.Link;
 import model.Semanas;
 import dao.CursoDAOFactory;
 
+/**
+ * Classe que ira servir de controle para os cursos
+ * */
 public class ControladorCursos {
 
 	public ControladorCursos() {
