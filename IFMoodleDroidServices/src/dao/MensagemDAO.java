@@ -115,7 +115,7 @@ public class MensagemDAO {
 	}
 	
 //enviar mensagem
-	public Mensagem enviarMensagem(long id, String contatoId, String mensagem)
+	public Mensagem enviarMensagem(long id, long userIdFrom, long userIdTo, String message)
 			throws Exception {
 		Connection connection = null;
 		int retorno_statement = 0;
@@ -126,7 +126,7 @@ public class MensagemDAO {
 			String query = "INSERT INTO mdl_message(id, useridfrom, useridto, subject,"+ 
 					"fullmessage, fullmessageformat, fullmessagehtml, smallmessage, notification,"
 					+"contexturl, contexturlname, timecreated)"+ 
-					"VALUES ("+id+","+contatoId+",NULL,"+mensagem+",0,"+"NULL,"+mensagem+",0,NULL,NULL,now()"+")";
+					"VALUES ("+id+","+userIdFrom+","+userIdTo+","+message+","+message+","+"NULL,"+message+",0,NULL,NULL,now()"+")";
 			
 			connection = ConnectionFactory.getInstance().getConnection();
 

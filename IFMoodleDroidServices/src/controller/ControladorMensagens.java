@@ -21,8 +21,8 @@ public class ControladorMensagens {
 		return MensagemDAOFactory.getInstance().getDAO().mensagensEnviadasLidas(idUsuario);
 	}
 	
-	public Mensagem enviarMensagem(Long idUsuario,String contatoId, String mensagem) throws Exception {
-		return MensagemDAOFactory.getInstance().getDAO().enviarMensagem(idUsuario,contatoId, mensagem);
+	public Mensagem enviarMensagem(Long id, Long userIdFrom, Long userIdTo,String message) throws Exception {
+		return MensagemDAOFactory.getInstance().getDAO().enviarMensagem(id, userIdFrom, userIdTo, message);
 	}
 	
 	

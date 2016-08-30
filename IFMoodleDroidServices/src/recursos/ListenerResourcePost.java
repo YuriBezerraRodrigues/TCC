@@ -187,12 +187,13 @@ public class ListenerResourcePost {
 	public Mensagem enviarMensagem(@FormParam("login") String login,
 			@FormParam("senha") String senha,
 			@FormParam("flagDecriptacao") String flagEncriptacao,
-			@FormParam("contatoId") String contatoId,
-			@FormParam("mensagem") String mensagem,
+			@FormParam("id") Long id,
+			@FormParam("userIdTo") Long userIdTo,
+			@FormParam("message") String message,
 			@Context HttpServletResponse servletResponse) throws IOException {
 
-		return Fachada.getInstance().enviarMensagem(login, senha,
-				flagEncriptacao, contatoId, mensagem);
+		//return Fachada.getInstance().enviarMensagem(login, senha,flagEncriptacao, contatoId, mensagem);
+		return Fachada.getInstance().enviarMensagem(login, senha, flagEncriptacao,id,userIdTo, message);
 
 	}
 

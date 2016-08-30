@@ -3,55 +3,59 @@ package model;
 import javax.xml.bind.annotation.XmlRootElement;
 
 
+/**
+ * Uma mensagem no moodle e composta por
+ * id, que e o id da mensagem
+ * userIdFrom, quem esta enviando a mensagem
+ * userIdTo, quem esta recebendo a mensagem
+ * fullmessage e smallmessage, mesmos dados repetidos em banco, aqui vai ser substituido por message
+ * */
 @XmlRootElement
 public class Mensagem {
-	private long Iddestinatario;//quem recebe
-	private long Idremetente; //quem envia
-	private String mensagem;
-	private String hora;
-	private String data;
+	private long id;
+	private long userIdFrom;
+	private long userIdTo;
+	private String message;
 	
-	public Mensagem(){}
-	
-	public Mensagem(long Iddestinatario, long Idremetente, String mensagem){
-		this.Iddestinatario=Iddestinatario;
-		this.Idremetente =Idremetente;
-		this.mensagem = mensagem;
-		
-		
+	public Mensagem() {
 	}
-	
-	public long getIdestinatario() {
-		return Iddestinatario;
-	}
-	public void setIdestinatario(long idestinatario) {
-		Iddestinatario = idestinatario;
-	}
-	public long getIdremetente() {
-		return Idremetente;
-	}
-	public void setIdremetente(long idremetente) {
-		Idremetente = idremetente;
-	}
-	public String getMensagem() {
-		return mensagem;
-	}
-	public void setMensagem(String mensagem) {
-		this.mensagem = mensagem;
-	}
-	public String getHora() {
-		return hora;
-	}
-	public void setHora(String hora) {
-		this.hora = hora;
-	}
-	public String getData() {
-		return data;
-	}
-	public void setData(String data) {
-		this.data = data;
-	}
-	
-	
 
+	public Mensagem(long userIdFrom, long userIdTo, String message) {
+		this.userIdFrom = userIdFrom;
+		this.userIdTo = userIdTo;
+		this.message = message;
+	}
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public long getUserIdFrom() {
+		return userIdFrom;
+	}
+
+	public void setUserIdFrom(long userIdFrom) {
+		this.userIdFrom = userIdFrom;
+	}
+
+	public long getUserIdTo() {
+		return userIdTo;
+	}
+
+	public void setUserIdTo(long userIdTo) {
+		this.userIdTo = userIdTo;
+	}
+
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
+	
 }

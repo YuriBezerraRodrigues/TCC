@@ -120,8 +120,9 @@
 		<p>login:</p><input type="text" name="login" /><br /> 
 		<p>Senha:</p><input type="text" name="senha" /><br /> 
 		<p>flag de decriptação(0 - off, 1 - on):</p><input type="text" name="flagDecriptacao" title="aaaa" />
-		<p>Mensagem:</p><input type="text" name="mensagem" /><br /> 
-		<p>Id do contato:</p><input type="text" name="contatoId" /><br /> 
+		<p>Id:</p><input type="text" name="id" /><br />
+		<p>Mensagem:</p><input type="text" name="message" /><br /> 
+		<p>Id do contato:</p><input type="text" name="userIdTo" /><br /> 
 		<br /> 
 		<input type="submit" value="Enviar" />
 	</form>

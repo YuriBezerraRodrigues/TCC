@@ -189,12 +189,13 @@ public class Fachada {
 	
 	
 	public  Mensagem enviarMensagem(String login, String senha,
-			String flagEncriptacao, String contatoId, String mensagem) {
+			String flagEncriptacao, Long id, Long userIdTo, String message) {
 		Usuario usuarioLogado = retornaUsuario(login, senha, flagEncriptacao);
 		Mensagem retorno=null;
 		if(usuarioLogado!= null){
 			try {
-				retorno = controladorMensagens.enviarMensagem(usuarioLogado.getId(), contatoId, mensagem);
+				//retorno = controladorMensagens.enviarMensagem(usuarioLogado.getId(), contatoId, mensagem);
+				retorno = controladorMensagens.enviarMensagem(id,usuarioLogado.getId(), userIdTo, message);
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
