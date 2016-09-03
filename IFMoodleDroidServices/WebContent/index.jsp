@@ -9,10 +9,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"
+	type="text/css" />
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 <title>Pagina Teste</title>
 </head>
 <body>
-	<h1>Seja Bem Vindo ao Services do Moodle Droid!</h1>
+	<h1 class="text-center">Seja Bem Vindo ao Services do Moodle Droid!</h1>
 	
 	<p>Noticias:</p>
 	<form method="post"
