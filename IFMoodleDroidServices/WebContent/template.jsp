@@ -210,6 +210,25 @@
 			</div>
 			<!-- Fim de modelo -->
 			
+			
+						<!-- Adicao de Webservice modelo -->
+			<div class="col-md-4 col-sm-6 portfolio-item">
+				<a href="#portfolioModal7" class="portfolio-link"
+					data-toggle="modal">
+					<div class="portfolio-hover">
+						<div class="portfolio-hover-content">
+							<i class="fa fa-plus fa-3x"></i>
+						</div>
+					</div> <img src="img/portfolio/startup-framework.png"
+					class="img-responsive" alt="">
+				</a>
+				<div class="portfolio-caption">
+					<h4>Teste</h4>
+					<p class="text-muted">Teste</p>
+				</div>
+			</div>
+			<!-- Fim de modelo -->
+			
 			<div class="col-md-4 col-sm-6 portfolio-item">
 				<a href="#portfolioModal2" class="portfolio-link"
 					data-toggle="modal">
@@ -857,7 +876,7 @@
 		</div>
 	</div>
 	
-	<!-- Portfolio Modal 6 -->
+	<!-- Portfolio Modal 7 -->
 	<div class="portfolio-modal modal fade" id="portfolioModal7"
 		tabindex="-1" role="dialog" aria-hidden="true">
 		<div class="modal-dialog">
