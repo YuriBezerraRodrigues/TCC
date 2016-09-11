@@ -152,7 +152,7 @@
 						<div class="portfolio-hover-content">
 							<i class="fa fa-plus fa-3x"></i>
 						</div>
-					</div> <img src="img/portfolio/roundicons.png" class="img-responsive"
+					</div> <img src="img/portfolio/courses.png" class="img-responsive"
 					alt="">
 				</a>
 				<div class="portfolio-caption">
@@ -171,10 +171,11 @@
 					class="img-responsive" alt="">
 				</a>
 				<div class="portfolio-caption">
-					<h4>Startup Framework</h4>
-					<p class="text-muted">Website Design</p>
+					<h4>News</h4>
+					<p class="text-muted">Check news from user</p>
 				</div>
 			</div>
+			
 			<div class="col-md-4 col-sm-6 portfolio-item">
 				<a href="#portfolioModal3" class="portfolio-link"
 					data-toggle="modal">
@@ -186,8 +187,57 @@
 					alt="">
 				</a>
 				<div class="portfolio-caption">
-					<h4>Treehouse</h4>
-					<p class="text-muted">Website Design</p>
+					<h4>Listar Foruns de um Cursos</h4>
+					<p class="text-muted">Listar Foruns</p>
+				</div>
+			</div>
+			
+			<!-- Adicao de Webservice modelo -->
+			<div class="col-md-4 col-sm-6 portfolio-item">
+				<a href="#portfolioModal7" class="portfolio-link"
+					data-toggle="modal">
+					<div class="portfolio-hover">
+						<div class="portfolio-hover-content">
+							<i class="fa fa-plus fa-3x"></i>
+						</div>
+					</div> <img src="img/portfolio/startup-framework.png"
+					class="img-responsive" alt="">
+				</a>
+				<div class="portfolio-caption">
+					<h4>Teste</h4>
+					<p class="text-muted">Teste</p>
+				</div>
+			</div>
+			<!-- Fim de modelo -->
+			
+			<div class="col-md-4 col-sm-6 portfolio-item">
+				<a href="#portfolioModal2" class="portfolio-link"
+					data-toggle="modal">
+					<div class="portfolio-hover">
+						<div class="portfolio-hover-content">
+							<i class="fa fa-plus fa-3x"></i>
+						</div>
+					</div> <img src="img/portfolio/startup-framework.png"
+					class="img-responsive" alt="">
+				</a>
+				<div class="portfolio-caption">
+					<h4>Teste</h4>
+					<p class="text-muted">Teste</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 portfolio-item">
+				<a href="#portfolioModal2" class="portfolio-link"
+					data-toggle="modal">
+					<div class="portfolio-hover">
+						<div class="portfolio-hover-content">
+							<i class="fa fa-plus fa-3x"></i>
+						</div>
+					</div> <img src="img/portfolio/startup-framework.png"
+					class="img-responsive" alt="">
+				</a>
+				<div class="portfolio-caption">
+					<h4>Teste</h4>
+					<p class="text-muted">Teste</p>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-6 portfolio-item">
@@ -570,28 +620,38 @@
 					<div class="row">
 						<div class="col-lg-8 col-lg-offset-2">
 							<div class="modal-body">
-								<h2>Project Heading</h2>
-								<p class="item-intro text-muted">Lorem ipsum dolor sit amet
-									consectetur.</p>
-								<img class="img-responsive img-centered"
-									src="img/portfolio/startup-framework-preview.png" alt="">
-								<p>
-									<a href="http://designmodo.com/startup/?u=787">Startup
-										Framework</a> is a website builder for professionals. Startup
-									Framework contains components and complex blocks (PSD+HTML
-									Bootstrap themes and templates) which can easily be integrated
-									into almost any design. All of these components are made in the
-									same style, and can easily be integrated into projects,
-									allowing you to create hundreds of solutions for your future
-									projects.
-								</p>
-								<p>
-									You can preview Startup Framework <a
-										href="http://designmodo.com/startup/?u=787">here</a>.
-								</p>
+								<h2>Check News</h2>
+								<p class="item-intro text-muted">Deve ser informado os
+									seguintes dados: login e senha. No campo Flag de Decriptacao,
+									inserir 0</p>
+									
+									<div class="form-group">
+										<form method="post" action="http://localhost:8080/IFMoodleDroidServices/rest/listener/retornaNoticias">
+											<div>
+												<label for="login">Login</label>
+												<input required class="form-control" id="login" type="text" name="login" />
+											</div>
+											<br />
+											<div>
+												<label for="senha">Senha</label>
+												<input required class="form-control" id="senha" type="password" name="senha" />
+											</div>
+											<br />
+											<div>
+												<label for="decrip">Decriptacao</label>
+												<input class="form-control" id="decrip" type="text" name="flagDecriptacao" title="aaaa" />
+											</div>
+											<br />
+											<div>
+												<button type="submit" class="btn btn-info" value="Enviar">Enviar</button>
+											</div>
+										</form>
+									</div>
+									
+									
 								<button type="button" class="btn btn-primary"
 									data-dismiss="modal">
-									<i class="fa fa-times"></i> Close Project
+									<i class="fa fa-times"></i> Close Service
 								</button>
 							</div>
 						</div>
@@ -616,26 +676,43 @@
 						<div class="col-lg-8 col-lg-offset-2">
 							<div class="modal-body">
 								<!-- Project Details Go Here -->
-								<h2>Project Name</h2>
-								<p class="item-intro text-muted">Lorem ipsum dolor sit amet
-									consectetur.</p>
-								<img class="img-responsive img-centered"
-									src="img/portfolio/treehouse-preview.png" alt="">
-								<p>
-									Treehouse is a free PSD web template built by <a
-										href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>.
-									This is bright and spacious design perfect for people or
-									startup companies looking to showcase their apps or other
-									projects.
-								</p>
-								<p>
-									You can download the PSD template in this portfolio sample item
-									at <a
-										href="http://freebiesxpress.com/gallery/treehouse-free-psd-web-template/">FreebiesXpress.com</a>.
-								</p>
+								<h2>Listar Foruns de um Curso</h2>
+								<p class="item-intro text-muted">Deve ser informado os
+									seguintes dados: login e senha. No campo Flag de Decriptacao,
+									inserir 0</p>
+									
+									<div class="form-group">
+										<form method="post" action="http://localhost:8080/IFMoodleDroidServices/rest/listener/retornaForumsCurso">
+											<div>
+												<label for="login">Login</label>
+												<input required class="form-control" id="login" type="text" name="login" />
+											</div>
+											<br />
+											<div>
+												<label for="senha">Senha</label>
+												<input required class="form-control" id="senha" type="password" name="senha" />
+											</div>
+											<br />
+											<div>
+												<label for="decrip">Decriptacao</label>
+												<input class="form-control" id="decrip" type="text" name="flagDecriptacao" title="aaaa" />
+											</div>
+											<br />
+											<div>
+												<label for="cursoId">ID Curso</label>
+												<input required class="form-control" id="cursoId" type="text" name="cursoId" />
+											</div>
+											<br />
+											<div>
+												<button type="submit" class="btn btn-info" value="Enviar">Enviar</button>
+											</div>
+										</form>
+									</div>
+									
+									
 								<button type="button" class="btn btn-primary"
 									data-dismiss="modal">
-									<i class="fa fa-times"></i> Close Project
+									<i class="fa fa-times"></i> Close Service
 								</button>
 							</div>
 						</div>
@@ -779,6 +856,62 @@
 			</div>
 		</div>
 	</div>
+	
+	<!-- Portfolio Modal 6 -->
+	<div class="portfolio-modal modal fade" id="portfolioModal7"
+		tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="close-modal" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl"></div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 col-lg-offset-2">
+							<div class="modal-body">
+								<h2>Teste</h2>
+								<p class="item-intro text-muted">Deve ser informado os
+									seguintes dados: login e senha. No campo Flag de Decriptacao,
+									inserir 0</p>
+									
+									<div class="form-group">
+										<form method="post" action="http://localhost:8080/IFMoodleDroidServices/rest/listener/retornaNoticias">
+											<div>
+												<label for="login">Login</label>
+												<input required class="form-control" id="login" type="text" name="login" />
+											</div>
+											<br />
+											<div>
+												<label for="senha">Senha</label>
+												<input required class="form-control" id="senha" type="password" name="senha" />
+											</div>
+											<br />
+											<div>
+												<label for="decrip">Decriptacao</label>
+												<input class="form-control" id="decrip" type="text" name="flagDecriptacao" title="aaaa" />
+											</div>
+											<br />
+											<div>
+												<button type="submit" class="btn btn-info" value="Enviar">Enviar</button>
+											</div>
+										</form>
+									</div>
+									
+									
+								<button type="button" class="btn btn-primary"
+									data-dismiss="modal">
+									<i class="fa fa-times"></i> Close Service
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
 
 	<!-- jQuery -->
 	<script src="vendor/jquery/jquery.min.js"></script>
