@@ -123,10 +123,14 @@ public class MensagemDAO {
 
 		Mensagem temp = null;
 		try {
-			String query = "INSERT INTO mdl_message(id, useridfrom, useridto, subject,"+ 
-					"fullmessage, fullmessageformat, fullmessagehtml, smallmessage, notification,"
-					+"contexturl, contexturlname, timecreated)"+ 
-					"VALUES ("+id+","+userIdFrom+","+userIdTo+","+message+","+message+","+"NULL,"+message+",0,NULL,NULL,now()"+")";
+//			String query = "INSERT INTO mdl_message(id, useridfrom, useridto, subject,"+ 
+//					"fullmessage, fullmessageformat, fullmessagehtml, smallmessage, notification,"
+//					+"contexturl, contexturlname, timecreated)"+ 
+//					"VALUES ("+id+","+userIdFrom+","+userIdTo+",'"+message+"','"+message+"',NULL,'"+message+"',0,NULL,NULL,now()"+")";
+			String query= " INSERT INTO mdl_message(id, useridfrom, useridto, subject, fullmessage, fullmessageformat, "
+					+ "fullmessagehtml, smallmessage, notification, contexturl, contexturlname, timecreated) "
+					+ "VALUES ("+id+","+userIdFrom+","+userIdTo+",'"+message+"','"+message+"',0,NULL,'"+message+"',0,NULL,NULL,'now()')";
+			
 			
 			connection = ConnectionFactory.getInstance().getConnection();
 
