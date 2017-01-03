@@ -22,7 +22,6 @@
 			<a class="navbar-brand" href="home.jsp">Moodle Services</a>
 		</div>
 		<ul class="nav navbar-nav">
-			<li><a href="webAPI.jsp">Web Api</a></li>
 			<li><a href="webAPIconsole.jsp">Web Api Console</a></li>
 			<li><a href="about.jsp">About</a></li>
 			<li><a href="contactUs.jsp">Contact Us</a></li>
@@ -42,21 +41,7 @@
 	</div>
 	<!-- Fim do Texto central da pagina -->
 
-	<!-- Inicio Web Api -->
-	<div class="col-md-3 col-sm-6">
-		<div class="about-content">
-			<h3>
-				<a href="webAPI.jsp" title="Web API">Web API</a>
-			</h3>
-			<p>
-				Our Web API enables your applications seek data on MoodleIFPE
-				database and manage user lists and contacts saved courses. <a
-					href="webAPI.jsp" class="more-link">Read more</a>
-			</p>
-		</div>
-	</div>
-	<!-- Fim Web Api -->
-
+	
 	<!-- Inicio Console Api -->
 	<div class="col-md-3 col-sm-6">
 		<div class="about-content">
