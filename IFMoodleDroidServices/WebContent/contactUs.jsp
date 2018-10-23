@@ -32,7 +32,7 @@
 		<ul class="nav navbar-nav">
 			<!-- <li class="active"><a href="#">Home</a></li> -->
 			<li><a href="webAPIconsole.jsp">Web Api Console</a></li>
-			<li><a href="about.jsp">About</a></li>
+			<!-- <li><a href="about.jsp">About</a></li> -->
 			<li><a href="contactUs.jsp">Contact Us</a></li>
 		</ul>
 	</div>

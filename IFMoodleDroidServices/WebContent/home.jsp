@@ -23,7 +23,7 @@
 		</div>
 		<ul class="nav navbar-nav">
 			<li><a href="webAPIconsole.jsp">Web Api Console</a></li>
-			<li><a href="about.jsp">About</a></li>
+			<!-- <li><a href="about.jsp">About</a></li> -->
 			<li><a href="contactUs.jsp">Contact Us</a></li>
 		</ul>
 	</div>
@@ -59,7 +59,7 @@
 	<!-- Fim Console Api -->
 
 	<!-- Inicio About -->
-	<div class="col-md-3 col-sm-6">
+	<!-- <div class="col-md-3 col-sm-6">
 		<div class="about-content">
 			<h3>
 				<a href="about.jsp" title="About">About</a>
@@ -70,7 +70,7 @@
 					more</a>
 			</p>
 		</div>
-	</div>
+	</div> -->
 	<!-- Fim About -->
 	
 	<!-- Inicio ContactUs -->
